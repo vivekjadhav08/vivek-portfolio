@@ -1,0 +1,34 @@
+.sec   { padding: 100px 5%; background: var(--bg2); }
+.inner { max-width: 1180px; margin: 0 auto; }
+.eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 9px; }
+.title   { font-family: 'Syne', sans-serif; font-size: clamp(28px,4.5vw,44px); font-weight: 900; letter-spacing: -1.5px; margin-bottom: 48px; }
+.em      { font-style: normal; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+.grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 60px; align-items: start; }
+.body { font-size: 15.5px; color: var(--muted); line-height: 1.82; }
+
+.stats { display: flex; gap: 28px; margin: 30px 0; flex-wrap: wrap; }
+.stat  { display: flex; flex-direction: column; align-items: center; }
+.statNum { font-family: 'Syne', sans-serif; font-size: 36px; font-weight: 900; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.statLabel { font-size: 11px; color: var(--dim); margin-top: 3px; }
+
+.btn {
+  padding: 12px 26px; border-radius: var(--rsm); font-size: 13.5px; font-weight: 700;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: #fff;
+  border: none; cursor: pointer; transition: all .25s; width: fit-content;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(59,130,246,0.28); }
+
+.skillGroup { margin-bottom: 20px; }
+.skillLabel { font-size: 10.5px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--dim); margin-bottom: 10px; }
+.tagRow { display: flex; flex-wrap: wrap; gap: 7px; }
+.tag    { padding: 5px 13px; border-radius: 20px; font-size: 12px; font-weight: 500; transition: transform .2s; }
+.tag:hover { transform: translateY(-1px); }
+.tagSf  { background: rgba(14,165,233,0.08);  border: 1px solid rgba(14,165,233,0.18);  color: #38bdf8; }
+.tagNet { background: rgba(139,92,246,0.08);  border: 1px solid rgba(139,92,246,0.18);  color: var(--accent2); }
+.tagWeb { background: rgba(251,191,36,0.08);  border: 1px solid rgba(251,191,36,0.18);  color: #fbbf24; }
+
+@media (max-width: 768px) {
+  .grid  { grid-template-columns: 1fr; gap: 40px; }
+  .stats { justify-content: center; }
+}

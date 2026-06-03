@@ -1,0 +1,65 @@
+.header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+  padding: 0 5%;
+  transition: background .3s, border-color .3s;
+  border-bottom: 1px solid transparent;
+}
+.scrolled {
+  background: rgba(5,5,8,0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-color: var(--border);
+}
+.inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 62px; max-width: 1180px; margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  font-family: 'Syne', sans-serif; font-weight: 900; font-size: 19px;
+  letter-spacing: -.5px; cursor: pointer;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+/* Desktop links */
+.desktopNav { display: flex; gap: 2px; }
+.link {
+  background: none; border: none; padding: 6px 14px;
+  border-radius: 20px; font-size: 13px; font-weight: 500;
+  color: var(--muted); cursor: pointer; transition: all .2s;
+}
+.link:hover { color: var(--accent); background: rgba(96,165,250,0.08); }
+.active     { color: var(--accent) !important; background: rgba(96,165,250,0.1) !important; }
+
+/* Hamburger */
+.ham {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; padding: 7px; cursor: pointer;
+}
+.ham span {
+  display: block; width: 21px; height: 2px;
+  background: var(--muted); border-radius: 2px; transition: all .25s;
+}
+.hamOpen span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamOpen span:nth-child(2) { opacity: 0; }
+.hamOpen span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile menu */
+.mobileMenu {
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 10px 0 16px; border-top: 1px solid var(--border);
+}
+.mobileLink {
+  background: none; border: none; text-align: left;
+  padding: 10px 4px; border-radius: 8px;
+  font-size: 14px; font-weight: 500; color: var(--muted);
+  cursor: pointer; transition: color .2s;
+}
+.mobileLink:hover { color: var(--accent); }
+
+@media (max-width: 640px) {
+  .desktopNav { display: none; }
+  .ham        { display: flex; }
+}
