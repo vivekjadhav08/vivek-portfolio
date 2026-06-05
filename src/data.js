@@ -109,7 +109,7 @@ export const PROJECTS = [
 export const EXPERIENCE = [
   {
     role:    'Software Developer',
-    company: 'Exchange Data Technology',
+    company: 'Xchange Data Technologies',
     period:  'Nov 2024 – Present',
     current: true,
     bar:     'linear-gradient(180deg,#60a5fa,#a78bfa)',

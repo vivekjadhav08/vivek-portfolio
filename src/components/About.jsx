@@ -23,7 +23,7 @@ export default function About() {
             </Reveal>
             <Reveal delay={0.07}>
               <p className={s.body} style={{ marginTop: 14 }}>
-                Currently working as a Software Developer at Exchange Data Technology.
+                Currently working as a Software Developer at Xchange Data Technologies.
                 A quick learner with a problem-solving mindset — I thrive in collaborative
                 teams and adapt to new technologies effortlessly.
               </p>
