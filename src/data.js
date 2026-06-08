@@ -1,3 +1,5 @@
+import { asset } from './utils/paths'
+
 // ─── All portfolio content lives here.
 // Edit this file to update your portfolio without touching any component.
 
@@ -34,13 +36,14 @@ export const INTERNSHIPS = [
   { period: 'Jan 2023 – Mar 2023', role: 'Software Development Intern', company: 'Virtue Byte, Pune' },
 ]
 
+// ── asset() fixes paths for both localhost AND GitHub Pages automatically ──
 export const CERTIFICATIONS = [
-  { emoji: '☁️', title: 'Salesforce Administration',         issuer: 'Seven Mentor Pvt Ltd, Pune', file: '/certificate/Salesforce_admin.pdf' },
-  { emoji: '⚡', title: 'Salesforce Developer',              issuer: 'Seven Mentor Pvt Ltd, Pune', file: '/certificate/Salesforce_developer.pdf' },
-  { emoji: '🧠', title: 'Salesforce Certified AI Associate', issuer: 'Salesforce',                  file: '/certificate/Salesforce_AIAssociate_Certificate.pdf' },
-  { emoji: '📜', title: 'Complete JavaScript',               issuer: 'Udemy',                       file: '/certificate/JavaScript.pdf' },
-  { emoji: '🐍', title: 'Python',                            issuer: 'Internshala',                 file: '/certificate/Python.pdf' },
-  { emoji: '🤖', title: 'ChatGPT',                           issuer: 'Udemy',                       file: '/certificate/ChatGpt.pdf' },
+  { emoji: '☁️', title: 'Salesforce Administration',         issuer: 'Seven Mentor Pvt Ltd, Pune', file: asset('certificate/Salesforce_admin.pdf') },
+  { emoji: '⚡', title: 'Salesforce Developer',              issuer: 'Seven Mentor Pvt Ltd, Pune', file: asset('certificate/Salesforce_developer.pdf') },
+  { emoji: '🧠', title: 'Salesforce Certified AI Associate', issuer: 'Salesforce',                  file: asset('certificate/Salesforce_AIAssociate_Certificate.pdf') },
+  { emoji: '📜', title: 'Complete JavaScript',               issuer: 'Udemy',                       file: asset('certificate/JavaScript.pdf') },
+  { emoji: '🐍', title: 'Python',                            issuer: 'Internshala',                 file: asset('certificate/Python.pdf') },
+  { emoji: '🤖', title: 'ChatGPT',                           issuer: 'Udemy',                       file: asset('certificate/ChatGpt.pdf') },
 ]
 
 export const PROJECTS = [
@@ -50,9 +53,9 @@ export const PROJECTS = [
     emoji:    '✈️',
     color:    '#38bdf8',
     stack:    'HTML, CSS, JS, Bootstrap, C#, SQL, ASP.NET',
-    doc:      '/project_d/Flyway_Major.pdf',
+    doc:      asset('project_d/Flyway_Major.pdf'),
     link:     null,
-    img:      '/images/airline.png',
+    img:      asset('images/airline.png'),
   },
   {
     title:    'Online Pizza Ordering System',
@@ -60,9 +63,9 @@ export const PROJECTS = [
     emoji:    '🍕',
     color:    '#f97316',
     stack:    'HTML, CSS, JS, C#, SQL, ASP.NET',
-    doc:      '/project_d/Pizza_Hut.pdf',
+    doc:      asset('project_d/Pizza_Hut.pdf'),
     link:     null,
-    img:      '/images/pizza.png',
+    img:      asset('images/pizza.png'),
   },
   {
     title:    'Car Rental Website',
@@ -70,9 +73,9 @@ export const PROJECTS = [
     emoji:    '🚗',
     color:    '#a78bfa',
     stack:    'HTML, CSS, JS, PHP, XAMPP Server, Bootstrap',
-    doc:      '/project_d/Car_Rental_Website.pdf',
+    doc:      asset('project_d/Car_Rental_Website.pdf'),
     link:     null,
-    img:      '/images/car.png',
+    img:      asset('images/car.png'),
   },
   {
     title:    'Stop Watch App',
@@ -92,7 +95,7 @@ export const PROJECTS = [
     stack:    'React.js, Bootstrap 5, JavaScript',
     doc:      null,
     link:     'https://vivekjadhav08.github.io/TextUtil-React/',
-    img:      '/images/textutils.png',
+    img:      asset('images/textutils.png'),
   },
   {
     title:    'News Website',
@@ -100,9 +103,9 @@ export const PROJECTS = [
     emoji:    '📰',
     color:    '#fbbf24',
     stack:    'React.js, Bootstrap 5, JavaScript',
-    doc:      '/project_d/NewsApp.pdf',
+    doc:      asset('project_d/NewsApp.pdf'),
     link:     null,
-    img:      '/images/news.png',
+    img:      asset('images/news.png'),
   },
 ]
 
@@ -152,13 +155,11 @@ export const EXPERIENCE = [
 ]
 
 export const CONTACT = [
-  { emoji: '✉️', type: 'Email',    value: 'vickyjadhav2897@gmail.com',          href: 'mailto:vickyjadhav2897@gmail.com' },
-  { emoji: '💼', type: 'LinkedIn', value: 'linkedin.com/in/vivekjadhav2000',     href: 'https://www.linkedin.com/in/vivekjadhav2000/' },
-  { emoji: '📞', type: 'Phone',    value: '+91 9613961001',                      href: 'tel:+919613961001' },
-  { emoji: '💬', type: 'WhatsApp', value: 'Click to connect',                    href: 'https://wa.me/+919613961001' },
+  { emoji: '✉️', type: 'Email',    value: 'vickyjadhav2897@gmail.com',      href: 'mailto:vickyjadhav2897@gmail.com' },
+  { emoji: '💼', type: 'LinkedIn', value: 'linkedin.com/in/vivekjadhav2000', href: 'https://www.linkedin.com/in/vivekjadhav2000/' },
+  { emoji: '📞', type: 'Phone',    value: '+91 9613961001',                  href: 'tel:+919613961001' },
+  { emoji: '💬', type: 'WhatsApp', value: 'Click to connect',                href: 'https://wa.me/+919613961001' },
 ]
-
-// ─── WORK PROJECTS (Live client deliveries at Exchange Data Technology) ───
 
 export const WORK_PROJECTS = [
   {
@@ -264,3 +265,7 @@ export const WORK_PROJECTS = [
     status: 'In Progress',
   },
 ]
+
+// ── Resume & photo — used in Hero and About ──
+export const RESUME = asset('Vivek_Jadhav_Resume.pdf')
+export const PHOTO  = asset('images/vivek.jpg')
