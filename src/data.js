@@ -124,9 +124,9 @@ export const EXPERIENCE = [
       'Followed Onion Architecture principles for clean backend code',
     ],
     projects: [
-      {
-        name: 'Lalkar News App — Sangli (2025)',
-        desc: 'RESTful APIs for mobile · Blazor admin portal · Secure content management',
+     {
+        name: 'PNG Adgil 1832 — Jewellery Platform (2025)',
+        desc: 'Easebuzz Payment Gateway & Webhook Integration · RDLC Invoice/Receipt Reports · Admin, SSY, Gold Booking & Ecommerce Support',
       },
       {
         name: 'Zilla Parishad Sangli — Govt. Project (2025)',
