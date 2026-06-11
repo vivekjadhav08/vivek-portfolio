@@ -264,6 +264,24 @@ export const WORK_PROJECTS = [
     ],
     status: 'In Progress',
   },
+  {
+    name: 'PNG Adgil 1832 — Jewellery Platform',
+    date: 'Jan 2025 – Present',
+    category: 'Full Stack',
+    tech: ['ASP.NET', 'Easebuzz', 'Payment Gateway', 'Webhook', 'RDLC Reports'],
+    url: 'https://t2.pngadgil1832.com:92/',
+    color: '#f59e0b',
+    emoji: '💍',
+    points: [
+      'Integrated Easebuzz Payment Gateway for secure online transactions',
+      'Built Easebuzz Webhook for real-time payment status & reconciliation',
+      'Created RDLC Reports for Invoice generation and Receipt printing',
+      'Fixed payment issues — transaction validation, callbacks, response handling',
+      'Support across 4 modules: Admin, SSY, Gold Booking & Ecommerce',
+      'DB updates, query optimisation, UAT testing & production deployments',
+    ],
+    status: 'In Progress',
+  },
 ]
 
 // ── Resume & photo — used in Hero and About ──
