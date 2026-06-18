@@ -265,7 +265,7 @@ export const WORK_PROJECTS = [
     status: 'In Progress',
   },
   {
-    name: 'PNG Adgil 1832 — Jewellery Platform',
+    name: 'PNGAdgil 1832 — Jewellery Platform',
     date: 'Jan 2025 – Present',
     category: 'Full Stack',
     tech: ['ASP.NET', 'Easebuzz', 'Payment Gateway', 'Webhook', 'RDLC Reports'],
