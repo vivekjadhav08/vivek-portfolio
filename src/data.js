@@ -125,7 +125,7 @@ export const EXPERIENCE = [
     ],
     projects: [
      {
-        name: 'PNG Adgil 1832 — Jewellery Platform (2025)',
+        name: 'PNG Gadgil 1832 — Jewellery Platform (2025)',
         desc: 'Easebuzz Payment Gateway & Webhook Integration · RDLC Invoice/Receipt Reports · Admin, SSY, Gold Booking & Ecommerce Support',
       },
       {
