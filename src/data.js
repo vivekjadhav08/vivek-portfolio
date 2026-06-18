@@ -125,11 +125,11 @@ export const EXPERIENCE = [
     ],
     projects: [
      {
-        name: 'PNG Gadgil 1832 — Jewellery Platform (2025)',
+        name: 'PNGadgil 1832 — Jewellery Platform ',
         desc: 'Easebuzz Payment Gateway & Webhook Integration · RDLC Invoice/Receipt Reports · Admin, SSY, Gold Booking & Ecommerce Support',
       },
       {
-        name: 'Zilla Parishad Sangli — Govt. Project (2025)',
+        name: 'Zilla Parishad Sangli — Govt. Project (GramGeeta)',
         desc: 'JWT auth + email services · Responsive web views · Onion Architecture · Mobile & web portal APIs',
       },
     ],
